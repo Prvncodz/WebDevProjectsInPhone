@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  background-color:white;
+  margin:0;
+  padding:0;
+}
+:root {
+   --primary-color:#4b58eb;
+   --secondary-color:#bcbaff;
+}
+.layer{
+  position:absolute;
+  z-index:2;
+  left:42%;
+  top:60%;
+  
+}
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-color:white;
+  position:relative;
+  width:100%;
+}
+.navbar-left{
+  background-color:white;
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  position:relative;
+}
+.navbar-right{
+  background-color:white;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 20px;
+}
+.images{
+  display:inline;
+  position:relative;
+}
+.buttons{
+  background-color: white;
+  border:none;
+  padding:10px;
+  
+}
+.heading{
+   display:flex;
+  padding:10px 20px;
+  font-family:sans-serif;
+  font-size:35px;
+  position:relative;
+}
+.heading-2{
+  display:flex;
+  padding:1px 20px;
+  font-style:thin;
+  font-family:arial;
+}
+.reviews{
+  position:absolute;
+  top:22%;
+  left:38%;
+}
+.download{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  padding:50px 1px;
+}
+.download-button{
+  background-color:#0d98ba;
+  color:white;
+  border:none;
+  padding:5px 15px;
+  font-family:"poppins";
+  font-weight:bold;
+}
+.logo{
+  border-radius:5px;
+  position:absolute;
+  top:60%;
+  left:3%;
+  padding:10px 1px;
+  z-index:2;
+}
+.inline-spans span{
+  display:inline;
+  position:relative;
+  left:17%;
+  font-size:17px;
+}
+.version{
+  font-size:small;
+}
+.container{
+  margin:20px 10px;
+  padding:10px;
+  grid-template-columns:repeat(2,minmax(100px,200px));
+  grid-template-rows:repeat(5,auto);
+  display:grid;
+  gap:10px;
+  background-color:#ffffff;
+}
+.cell{
+  padding:30px 20px;
+  display:flex;
+  background-color:#f7f7f7;
+  flex-direction:column;
+}
+.gbutton{
+  text-decoration:none;
+  color:white;
+  background-color:#1fcf1f;
+  border:none;
+  border-radius:5px;
+  font-family:poppins;
+  font-weight:bold;
+  font-size:10px;
+  align-items:center;
+  justify-content:center;
+  padding:6px 5px;
+}
+.text{
+  font-size:9px;
+  line-height:1.3;
+  font-family:poppins;
+  word-break:break-all;
+  word-wrap:break-word;
+  margin-top:10px;
+}
