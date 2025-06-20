@@ -1,0 +1,131 @@
+<!doctype html>
+<html >
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>website builder</title>
+      <style>
+         
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  background-color:white;
+  margin:0;
+  padding:0;
+  font-family:'poppins';
+}
+.container{
+  height:100vh;
+  width:100vw;
+  background-color:black;
+  justify-content:center;
+}
+.cards{
+  position:relative;
+  width:400px;
+  min-height:120px;
+  background-color:black;
+  color:white;
+  padding:10px 10px 10px 170px;
+  box-sizing:border-box;
+  border-radius:10px;
+}
+.title{
+  font-size:16px;
+  font-weight:500;
+  margin-bottom:6px;
+  line-height:1.4;
+}
+.duration{
+  background-color:#1a1a1a;
+  color:white;
+  position: absolute;
+  font-size:12px;
+  padding:3px 6px;
+  top:90px;
+  left:123px;
+  border-radius:4px;
+  font-family:poppins;
+  opacity:0.9;
+}
+.thumbnail{
+ width:160px;
+ height:110px;
+  object-fit:cover;
+  border-radius:8px;
+  position: absolute;
+  top:5px;
+  left:2px;
+}
+.channel_name{
+  font-size:13px;
+  margin:0;
+  color:#aaa;
+  display:div;
+}
+.views,.months_been_posted{
+  font-size:13px;
+  color:#aaa;
+  margin:2px 0;
+  display:inline;
+   }
+         
+      </style>
+      
+    </head>
+   <body>
+     <div class="container">
+      </div>
+      <script>
+         
+function YtViewsConverter(views){
+   if(views>999 && views<1000000){
+      let v=views.toString();
+      const new_views=v.slice(0,v.length-3) + "K views";
+   return new_views;
+   }else{
+      let v=views.toString();
+      const m=v.slice(0,v.length-6) +"M views";
+      return m;
+   }
+}
+
+
+function CreateCards(title,thumbnail,views,channel_name,duration,months_been_posted){
+    let cardDiv=document.createElement("div");
+     cardDiv.className="cards";
+    let titleDiv=document.createElement("div");
+     titleDiv.className="title";
+     titleDiv.textContent=title;
+  let thumbnailDiv=document.createElement("img");
+     thumbnailDiv.className="thumbnail";
+    thumbnailDiv.src="img.jpg"
+    thumbnailDiv.alt="thumbnail";
+  let viewsDiv=document.createElement("div");
+     viewsDiv.className="views";
+     viewsDiv.textContent=YtViewsConverter(views);
+  let channelDiv=document.createElement("div");
+     channelDiv.className="channel_name";
+   channelDiv.textContent=channel_name;
+  let durationDiv=document.createElement("div");
+     durationDiv.className="duration";
+     durationDiv.textContent=duration;
+  let monthsDiv=document.createElement("div");
+     monthsDiv.className="months_been_posted";
+    monthsDiv.textContent=months_been_posted; 
+
+
+cardDiv.appendChild(thumbnailDiv);
+cardDiv.appendChild(durationDiv);  cardDiv.appendChild(titleDiv);
+cardDiv.appendChild(channelDiv);
+cardDiv.appendChild(viewsDiv);
+cardDiv.appendChild(monthsDiv);
+document.querySelector('.container').appendChild(cardDiv);
+}
+CreateCards("17 Life Lessons(I Wish Someone Had Told Me)","img.jpg",170000,"Iman Ghadzi","17:01","•2 months ago");
+CreateCards("17 Life Lessons(I Wish Someone Had Told Me)","img.jpg",170000,"Iman Ghadzi","17:01","•2 months ago");
+CreateCards("17 Life Lessons(I Wish Someone Had Told Me)","img.jpg",170000,"Iman Ghadzi","17:01","•2 months ago");
+                      
+      </script>
+   </body>
+</html>
+
