@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hacker's Terminal</title> 
+       <link rel="stylesheet" href="style.css" />
+       
+       
+    </head>
+   <body>
+       <div class="load">
+       </div>
+       <script>
+          let loader=document.querySelector(".load");
+         const messages=[
+             "HACKER HAS TAKEN ACCESS",
+             "FINDING SECURITY FILES",
+             "GETTING ALL PASSWORDS",
+             "TRANSFERING FILES TO THE SERVER",
+             "CLEANING UP"
+         ];
+        function wait(ms){
+          return  new Promise(resolve=>setTimeout (resolve,ms));
+        }
+         async function showlines(){
+           for(message of messages){
+               let div=document.createElement("div");
+               div.classList.add("text");
+               loader.appendChild(div);
+               
+               div.textContent=message;
+               for(let i=0;i<3;i++){
+                await wait(500);
+                div.textContent+=".";
+               }
+            await wait(500);
+           } 
+         }
+        showlines();
+       </script>
+        
+</body>
+</html>
+
