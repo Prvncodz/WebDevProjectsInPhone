@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors game</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+   background-color:#ffea00;
+   margin:0;
+   padding:0;
+   font-family:'Press Start 2P',cursive;
+ }
+.text{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin:0;
+   padding:0;
+   font-weight:bold;
+   
+ }
+.img{
+   position:relative;
+   display:flex;
+   justify-content:center;
+   width:100vw;
+   height:auto;
+   border-radius:5px;
+   object-fit:border-box;
+}
+.container{
+   height:50vh;
+   width:100vw;
+   position:relative;
+}
+.buttons{
+  margin:10px;
+  padding:10px 10px;
+  position:absolute;
+  z-index:1;
+  top:210px;
+  left:18px
+}
+.button{
+   border:none;
+   font-family:'Press Start 2P',cursive;
+   background-color:#ebebeb;
+   color:black;
+   padding:12px 12px;
+   border-radius:5px;
+   gap:20px;
+}   
+.button:hover{
+   background-color: lime;
+   
+}
+#result{
+   width:100%;
+   color:#bd0000;
+   margin:13px;
+   padding:0;
+   display:flex;
+   justify-content:center;
+   text-align:center;
+   border-radius:15px;
+}
+#result h2{
+   margin:0;
+   padding:0;
+   font-weight:bold;
+   display:flex;
+   text-align:center;
+}
+#scoreboard{
+   margin-top:15px;
+   display:flex;
+   color:#0011ff;
+}
+#text{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin:10px;
+   padding:5px;
+   font-weight:bold;
+   font-size:2em;
+   border:4px solid black;
+   border-radius: 10px;
+   
+}
+#moves{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   padding:10px;
+   font-size:1em;
+   color:black;
+}
+.container2{
+   height:50vh;
+   width:100vw;
+   position:relative;
+   align-items:center;
+   justify-content:center; 
+   padding:3px;
+      }
+    </style>
+    
+</head>
+<body>
+   <div class="text">
+     <h3>
+       Player v/s Computer
+     </h3>
+   </div>
+   
+   <div class=container>
+      <img src="rps.jpg" class="img" />
+   <div class="buttons">
+      <button class="button" onclick="play('rock')">Rock</button>
+      <button class="button" onclick="play('scissors')">Scissors</button>
+      <button class="button"  onclick="play('paper')">Paper</button>  
+   </div>
+   </div>
+   <div class=container2>
+         <div id="moves">
+      
+         </div>
+   <div id="result">
+      <h5>
+        ....
+      </h5>
+   </div>
+     <div >
+        <table id="scoreboard" >
+        <h4 id="text">
+          Scoreboard 
+        </h4>
+       <tr>
+          <td>Player:</td>
+          <td id="player-score">0</td>
+          
+       </tr>
+        <tr>
+           <td>Computer:</td>
+           <td id="computer-score">0</td>
+        </tr>  
+    </table>
+     </div>
+       
+      <script src="script.js"></script>
+      
+    <script>
+       function computer() {
+   let random=Math.floor(Math.random()*3);
+   let moves={
+     0:'rock',
+     1:'scissors',
+     2:'paper'
+   }
+   return moves[random];
+}
+
+function play(move) {
+  let playerMove=move;
+  let computerMove=computer();
+  
+  let moves = document.getElementById("moves");
+  moves.innerHTML="";
+   let pmove=document.createElement("div");
+   pmove.textContent="Player: "+move+ "  Computer: "+computerMove ;
+  
+   moves.appendChild(pmove);
+  
+  let winner;
+        if(playerMove===computerMove){
+          winner="Its A Tie";
+        }
+     else if (playerMove==="scissors" && computerMove==="paper") {
+        winner ="Player";
+     } else if(playerMove==="paper" && computerMove==="rock"){
+        winner="Player";
+     }else if(playerMove==="rock" && computerMove==="scissors"){
+        winner="Player";
+     }else{
+       winner="Computer";
+     }
+  
+let result = document.getElementById("result");
+if(winner==="Its A Tie"){
+  result.textContent="Its A Tie";
+}else{
+  result.textContent= winner + " Has Won The Game" ;
+}
+
+let playerCurrentMove=document.getElementById("player-score");
+let computerCurrentMove=document.getElementById("computer-score");
+
+let player_score=parseInt(playerCurrentMove.textContent)||0;
+let computer_score=parseInt(computerCurrentMove.textContent)||0;
+  
+if(winner==="Player"){
+  player_score++;
+  playerCurrentMove.textContent=player_score;
+}else if(winner==="Computer"){
+  computer_score++;
+  computerCurrentMove.textContent=computer_score;
+}
+if(player_score>2){
+  alert("Player Has Won 🎉👏");
+}else if(computer_score>2){
+  alert("Player Has Won 🎉👏");
+}
+};
+
+
+       
+    </script>
+    
+    
+   </div>
+</body>
+</html>
