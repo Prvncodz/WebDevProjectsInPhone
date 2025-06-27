@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        
+       body{
+           background-color:aqua;
+           font-family: Roboto, Geneva, sans-serif;
+        word-wrap:column;
+       }
+        .button{
+            background-color:black;
+            color:white;
+        }
+        .input {
+            font-style:italic;
+            word-wrap:column;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>
+       Practice Your Typing 🧑‍💻
+    </h1>
+    <h3>
+       click the start button to have a quote displayed,type the quote as fast you can!
+    </h3>
+    <h2 id="quote">
+
+    </h2>
+    <input class="input" id="input" type="text" placeholder="Type Here!" />
+     <button class="button" id="button">
+         START
+     </button>
+    <p id="result"></p>
+    <script>
+     const wordsList=[
+  "mountain", "river", "forest", "cloud", "ocean",
+  "bridge", "castle", "library", "village", "robot",
+  "guitar", "piano", "bicycle", "scooter", "rocket",
+  "painting", "statue", "vase", "lantern", "mirror",
+  "phoenix", "wizard", "knight", "dragon", "pirate",
+  "journal", "clock", "compass", "treasure", "potion"
+];
+    function Random(){
+        let rand=Math.floor(Math.random()* wordsList.length);
+        return wordsList[rand];
+    }
+        const myResult=document.getElementById("result");
+let originalText="" ;      document.getElementById("button").addEventListener("click",function displayQoute(){
+         let quote="";
+         myResult.textContent="";
+            for(let i=0;i<10;i++){
+              
+            quote+=Random() + " ";
+          }                                               originalText=quote.trim();
+            document.getElementById("quote").textContent=originalText;
+    document.getElementById("input").value="";
+       });
+        
+       const myquote=document.getElementById("quote");
+        const myInput=document.getElementById("input");
+        let startTime=0;
+       myInput.addEventListener("focus",()=>{
+            startTime= new Date();
+       });
+        myInput.addEventListener("input",()=>{
+            const word=myInput.value.trim();
+            if(word===""){
+             myquote.textContent=originalText; 
+            }
+            else {
+                const regex= new RegExp(`(${word})`,'gi');
+                myquote.innerHTML=originalText.replace(regex,'<span style=background-color:yellow >$1</span>');
+            }
+        });
+           myInput.addEventListener("blur",()=>{
+           let endTime= new Date();
+            let timeTaken=(endTime-startTime)/1000;
+            myResult.textContent="⏰ You took "+timeTaken.toFixed(2)+" Seconds"; 
+       }); 
+            
+            </script>
+    
+</body>
+</html>
