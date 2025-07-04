@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Center it fully */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Canvas styling */
+canvas {
+  background: black;
+  display: block;
+}
+#start{
+  position: absolute;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left:37%;
+  transform:translate(-50,-50);
+  border:none;
+}
+#start img{
+  border:none;
+  background-color:#000000;
+  width: 100px;
+  height: 70px;
+  padding:6px;
+  object-fit:center;
+  border-radius: 20%;
+}
+#controls{
+  position:absolute;
+  justify-content: center;
+  gap:15px;
+  bottom:0;
+  border:none;
+  transform:translate(-50,-50);
+  background:black;
+  font-family: 'Press Start 2P', cursive;
+  z-index: 1;
+}
+.button img{
+  border:none;
+  background-color:#000000;
+  width: 60px;
+  height: 60px;
+  padding:6px;
+  object-fit:center;
+  border-radius: 20%;
+  opacity:0.8;
+}
+.button{
+  background-color:#000000;
+  border:none;
+  
+}#hud {
+  position: absolute;
+  top:10px;
+  left: 20px;
+  color: red;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight:bold;
+  gap: 5px;
+  align-items: center;
+}
+#lives{
+  padding:5px;
+}
+#lives img {
+  width: 25px;
+  
+}
