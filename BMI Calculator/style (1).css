@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family:"Poppins",sans-serif;
+  box-sizing:border-box;
+}
+body{
+  text-align: center;
+}
+#heading{
+  margin-top:5px;
+  margin-bottom:5px;
+  background-blend-mode:on;
+  padding-left:4px;
+  font-size:25px; 
+  color:#383838;
+}
+#container{
+  background: linear-gradient(135deg, rgb(36, 0, 70), rgb(75, 0, 130));
+  height:100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box{
+  background-color:#e8e8e8;
+  color: #000000;
+  width:70vw;
+  height:auto;
+  padding:10px 15px;
+  border-radius:15px;
+  box-shadow: 4px 2px 10px 1px #d7e09f;
+  
+}
+#calculate{
+  border:none;
+  outline:none;
+  padding:5px;
+  margin-top:10px;
+  margin-bottom:15px;
+  width:85px;
+  height:25px;
+  color: #ffff;
+  background-color:#4c65e0;
+  border-radius:12px
+}
+.box{
+  background-color: white;
+  border:none;
+  border-radius:7px;
+  width:110px;
+  height:65px;
+  font-size:16px;
+  font-weight:bold;
+  padding:5px;
+  margin:10px;
+}
+.box input{
+  border:none;
+  border-bottom: 2px solid #2b25c4;
+  background-color: white;
+  margin-top:4px; 
+  outline:none;
+  background: transparent;
+  text-align:center;
+  font-size:16px;
+  width:60px;
+}
+#ageContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:realtive;
+  margin-bottom:5px;
+}
+#hwContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:realtive;
+  margin-bottom:5px;
+}
+#bmiContainer{
+  background-color:white;
+  border-radius:7px;
+  width: auto;
+  height: auto;
+  align-content:center;
+  margin-bottom:10px;
+}
+#age{
+  justify-content: center;
+  align-items: center;
+  position:realtive;
+}
+#bmi{
+  font-weight: bold;
+  margin-top:5px;
+  color:#7b7be0;
+}
+
+#result{
+  text-align:center;
+  margin-top:10px;
+  font-size:21px;
+  background-blend-mode:on;
+  padding:5px;
+  color:#bce63e;
+}
