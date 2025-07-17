@@ -14,7 +14,7 @@ I just **show up, code, and build** — no excuses.
 |----------------------------------|----------------------------------------------------------|
 | `Space Shooter Game`            | A canvas-based space shooting game with laser fire and enemies |
 | `Dynamix website builder.html`  | A beginner attempt at a basic drag-drop styled builder  |
-| `Faulty Calculator in Notepad`  | Mimics an old-school fake calculator app (fun twist!)   |
+| `Faulty Calculator in Node.js`  | Mimics an old-school fake calculator app (fun twist!)   |
 | `Html-Simple Quiz.html`         | Simple HTML-only quiz layout                            |
 | `UltraEditClone.html`           | Basic clone of the UltraEdit interface                  |
 | `hacker's terminal.html`        | Fake hacker terminal effect in browser                  |
