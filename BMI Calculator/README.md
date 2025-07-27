@@ -20,7 +20,7 @@ This is a simple BMI (Body Mass Index) Calculator web project built with HTML, C
 
 Below are two images from the `images` folder that illustrate the BMI Calculator:
 
-![BMI Calculator Input](images/bmi1.jpg)
+![BMI Calculator Input](images/bmi.jpg)
 *BMI Input Screen*
 
 ![BMI Calculator Result](images/bmi2.jpg)
