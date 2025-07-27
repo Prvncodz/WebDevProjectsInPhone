@@ -1,7 +1,7 @@
 # Flappy Bird Game (Phone Edition)
 
 <p align="center">
-  <img src="images/flappybird.png" alt="Flappy Bird Start Screen" width="250"/>
+  <img src="images/Menu.jpg" alt="Flappy Bird Start Screen" width="250"/>
 </p>
 
 A simple, mobile-friendly Flappy Bird clone made using HTML, CSS, and JavaScript.  
@@ -10,7 +10,7 @@ Designed and tested entirely on a phone, this project is an easy way to learn ga
 ## 🎮 Game Preview
 
 <p align="center">
-  <img src="images/screenshot1.png" alt="Flappy Bird Gameplay" width="250"/>
+  <img src="images/playing.jpg" alt="Flappy Bird Gameplay" width="250"/>
 </p>
 
 ## How to Play
@@ -48,7 +48,7 @@ Designed and tested entirely on a phone, this project is an easy way to learn ga
 
 | Start Screen                               | Gameplay                                  |
 |--------------------------------------------|--------------------------------------------|
-| <img src="images/flappybird.png" width="180"/> | <img src="images/screenshot1.png" width="180"/> |
+| <img src="images/Menu.jpg" width="180"/> | <img src="images/playing.jpg" width="180"/> |
 
 *(Replace `flappybird.png` and `screenshot1.png` with your actual image names from `flappybird/images` folder!)*
 
