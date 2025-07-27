@@ -45,12 +45,12 @@ Designed and tested entirely on a phone, this project is an easy way to learn ga
 4. Tap the play button to start the game!
 
 ## Screenshots
+| Start Screen                               | Gameplay                                  | Game Over Screen         |
+|--------------------------------------------|--------------------------------------------|-------------------------|
+| <img src="images/Menu.jpg" width="180"/> | <img src="images/playing.jpg" width="180"/> | <img src="images/Gameover.jpg" width="180"/> |
 
-| Start Screen                               | Gameplay                                  |
-|--------------------------------------------|--------------------------------------------|
-| <img src="images/Menu.jpg" width="180"/> | <img src="images/playing.jpg" width="180"/> |
-
-*(Replace `flappybird.png` and `screenshot1.png` with your actual image names from `flappybird/images` folder!)*
+*(Replace `flappybird.png`, `screenshot1.png`, and `gameover.png` with your actual image names from `flappybird/images` folder!)*
+ 
 
 ## Customization
 
