@@ -1,12 +1,11 @@
 # Netflix Clone
 
-This project is a simple **Netflix Clone** built using HTML, CSS, and JavaScript. The goal of this project was to practice web development skills—especially responsive design and UI recreation—using only a mobile phone for development and testing.
+This project is a simple **Netflix Clone** built using HTML, CSS, and JavaScript. The goal of this project was to practice web development skills—especially UI recreation—using only a mobile phone for development and testing
 
 ## Features
 
 - **Home Page:** Mimics the look and feel of the Netflix landing page.
 - **Movie Cards:** Display sample movies with images, titles, and genres.
-- **Responsive Design:** Works on mobile devices (since it was built and tested on a phone).
 - **Basic Navigation:** Includes simple navigation bar and footer.
 
 ## Screenshots
