@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body,
+html {
+  background-color: black;
+  color: white;
+  height: auto;
+  width: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header part */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 26px;
+  height: 27px;
+  width: 110px;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.16;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e00000;
+  font-size: 13px;
+  padding: 5px;
+  height: 33px;
+  width: 85px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: -1;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  opacity: 1;
+}
+
+.showcase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcaseContent {
+  position: relative;
+  top: 120px;
+  padding: 40px 30px;
+}
+
+.showcaseContent h1 {
+  font-weight: 1000;
+  line-height: 1.4;
+  font-size: 29px;
+  letter-spacing: -1;
+}
+
+.showcaseContent p {
+  color: #fff;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.text {
+  margin-top: 20px !important;
+}
+
+.email {
+  margin-top: 18px;
+  outline: none;
+  border: none;
+  color: #f5f5f5;
+  background-color: rgb(26, 26, 26, 0.4);
+  width: 300px;
+  height: 47px;
+  padding: 0 15px;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: 0 0 0 0.15px white;
+  backdrop-filter: blur(3px);
+}
+
+.email::placeholder {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500;
+  padding: 6px
+}
+
+.GetStarted {
+  margin-top: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e00000;
+  font-size: 16px;
+  padding: 10px 0;
+  height: 46px;
+  width: 155px;
+  border-radius: 3px;
+  font-weight: 800;
+  letter-spacing: -1;
+  position: relative;
+
+}
+
+/* section part */
+
+.sectionContainer {
+  height: auto;
+  width: auto;
+  position: relative;
+  z-index: 2;
+  top: 200px;
+  overflow: hidden;
+}
+
+.waveDivider {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  height: 200vh;
+  width: 100%;
+  background-color: red;
+  border-radius: 100% 100% 0 0;
+  transform: scaleX(4);
+  background: radial-gradient(#ed0e2c);
+  overflow: hidden;
+}
+
+.curveBg {
+  position: absolute;
+  overflow: hidden;
+  top: 4px;
+  height: 200vh;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  border-radius: 100% 100% 0 0;
+  transform: scaleX(4);
+}
+
+.curveBg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to bottom, #000042, #000000);
+  border-radius: 50% 50% 0 0;
+}
+
+#tNow {
+  position: absolute;
+  z-index: 2;
+  top: 43px;
+  left: 16px;
+  font-size: 17px;
+  letter-spacing: -1;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+
+.Content {
+  position: relative;
+  z-index: 3;
+  top: 91px;
+  flex: 1;
+  height: 400vh;
+  width: 100%;
+  background-color: #000000;
+  padding-bottom: 100px;
+}
+
+/* tabs */
+
+.tabsContainer {
+  position: relative;
+  top: 0;
+  height: auto;
+  max-width: 1500px;
+  padding: 20px;
+  padding-top: 2px;
+  z-index: 1;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.posters {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.poster {
+  border: none;
+  height: 150px;
+  width: 145px;
+  position: relative;
+  top: 0;
+}
+
+.poster img {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  justify-content: right;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.poster h1 {
+  color: black;
+  text-shadow:
+    1.5px 1.5px 0 #fff,
+    -1.5px 1.5px 0 #fff,
+    1.5px -1.5px 0 #fff,
+    -1.5px -1.5px 0 #fff,
+    0px 1.5px 0 #fff,
+    1.5px 0px 0 #fff,
+    -1.5px 0px 0 #fff,
+    0px -1.5px 0 #fff;
+  font-weight: 900;
+  font-size: 55px;
+  position: absolute;
+  left: -10px;
+  bottom: 7px;
+}
+
+.scrollWrapper {
+  background-color: black;
+  height: 190px;
+  width: 40px;
+  position: relative;
+  top: -19px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(-0.8);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.scrollWrapper-left {
+  position: absolute;
+  left: -4px;
+}
+
+.scrollWrapper-right {
+  right: -5px;
+  position: absolute;
+}
+
+.scroll {
+  height: 130px;
+  width: 24px;
+  background-color: #262626;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+
+#scroll-L,
+#scroll-R {
+  z-index: 4;
+}
+
+#scroll-L {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scroll-R {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#moreReasonTxt {
+  position: relative;
+  font-weight: bold;
+  font-size: 11px;
+  top: 50px;
+  left: 10px;
+  color: #ffff;
+}
+
+.cards {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 20px;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #130029;
+  height: 195px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+}
+
+.card h2 {
+  color: #ffff;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 7px 0;
+}
+
+.card h3 {
+  color: white;
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.card img {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  height: 85px;
+  width: 85px;
+  object-fit: cover;
+}
+
+.faq {
+  position: relative;
+  top: 100px;
+  font-size: 17px;
+  color: #ffff;
+  padding: 10px;
+}
+
+.infoTabs {
+  position: relative;
+  top: 90px;
+  height: auto;
+  width: auto;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.infoTab {
+  height: 62px;
+  width: auto;
+  color: #fff;
+  margin-top: 7px;
+  padding: 9px;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.moreInfo {
+  max-height: 0;
+  overflow: hidden;
+  min-width: 100px;
+  color: #fff;
+  margin-top: 2px;
+  background: #1f1f1f;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: block;
+  font-size: 19px;
+  padding: 0 30px;
+  transition: max-height 0.2s ease, padding 0.2s ease, opacity 0.4s ease;
+
+}
+
+.showInfo {
+  max-height: 600px;
+  padding: 20px 30px;
+  opacity: 1;
+}
+
+.infoTab span {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.infoTab p {
+  display: flex;
+  justify-content: left;
+  font-size: 19px;
+  padding: 0 20px;
+}
+
+.footer {
+  position: relative;
+  top: 70px;
+  left: -3px;
+  z-index: 2;
+  background-color: black;
+  height: auto;
+  width: 95vw;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer input {
+  margin: 10px 5px;
+}
+
+.call {
+  margin-top: 50px;
+  display: space-between;
+  font-size: 14px;
+  color: #d1d1d1ff;
+}
+
+.call a {
+  color: #d1d1d1ff;
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #999999;
+}
+
+.links a {
+  margin: 4px 0;
+  display: div;
+  color: #999999;
+}
+
+.niText {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.LearnMoreText {
+  color: #919191;
+}
+
+
+.hiddenPara {
+  color: #919191;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.hiddenPara.showPara {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.GetStartedBottom {
+  margin-top: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #e00000;
+  font-size: 16px;
+  padding-left: 0;
+  height: 46px;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 800;
+  letter-spacing: -1;
+  box-shadow: 0 0 50px black;
+}
