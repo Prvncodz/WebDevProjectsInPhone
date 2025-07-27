@@ -1,5 +1,5 @@
 # 🚀 Space Shooter Game
-
+![gameImg](Images/pewpew.gif)
 A simple space shooter game built entirely on **HTML5 Canvas**, **JavaScript**, and **CSS**. You control the spaceship and shoot down enemy ships while avoiding collisions!
 
 ## 📁 Project Structure
