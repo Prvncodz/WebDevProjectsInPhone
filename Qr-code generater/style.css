@@ -1,0 +1,97 @@
+body {
+      background: #ffffff;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 28px 24px 28px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.14);
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container h2 {
+      margin-bottom: 16px;
+      font-size: 22px;
+      color: #232338;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .container label {
+      align-self: flex-start;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #232338;
+      font-weight: 600;
+    }
+    .container input[type="text"] {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 16px;
+      border: 1px solid #d2d4dd;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      outline: none;
+      background: #f8fafc;
+      transition: border 0.2s;
+    }
+    .container input[type="text"]:focus {
+      border-color: #552fff;
+    }
+    .live-preview-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #7c7fa3;
+      margin-bottom: 8px;
+    }
+    .qr-preview {
+      width: 155px;
+      height:auto;
+      background: #ffffff;
+      border: 1.5px dashed #d2d4dd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      opacity:0.1;
+      transform:scaleY(0);
+      
+    }
+    .show{
+      opacity:1;
+      transform:scaleY(1);
+      transition:max-height 1s ease;
+    }
+    .qr-placeholder {
+      color: #c0c3d0;
+      font-size: 28px;
+      font-weight: bold;
+      user-select: none;
+      transition:max-height 1s ease;
+      
+    }
+    .container button {
+      width: 100%;
+      background: #552fff;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 12px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(85,47,255,0.19);
+      transition: background 0.18s;
+    }
+    .container button:hover {
+      background: #3e22b7;
+    }
