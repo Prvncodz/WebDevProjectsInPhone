@@ -3,8 +3,7 @@
 Welcome to my journey into **web development**, where every project you see here has been created and uploaded using **only my mobile phone**.
 
 I don’t have a PC yet.  
-I don’t wait for the perfect setup.  
-I just **show up, code, and build** — no excuses.
+So i just started coding in phone
 
 ---
 
