@@ -2,8 +2,8 @@
 
 Welcome to my journey into **web development**, where every project you see here has been created and uploaded using **only my mobile phone**.
 
-I don’t have a PC yet.  
-So i just started coding in phone
+I didn’t have a PC. 
+So i just started coding in phone.
 
 ---
 
